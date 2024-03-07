@@ -1,0 +1,17 @@
+name: Test
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  echo_rep_n:
+    name: Test github.repository names
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Test naming
+        uses: Srmrlt/Action-test/.github/workflows/test.yml
