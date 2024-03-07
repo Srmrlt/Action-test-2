@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Test naming
-        uses: Srmrlt/Action-test/.github/workflows/test.yml
+        uses: Srmrlt/Action-test/.github/workflows/test.yml@main
