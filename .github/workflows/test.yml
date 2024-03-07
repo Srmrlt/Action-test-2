@@ -1,0 +1,14 @@
+name: Test
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  echo_rep_n:
+    name: Test github.repository names
+    uses: Srmrlt/Action-test/.github/workflows/test.yml@main
