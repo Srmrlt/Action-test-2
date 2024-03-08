@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main
+env:
+  PATH: Srmrlt/Action-test/.github/workflows
 
 jobs:
   echo_rep_n:
     name: Test github.repository names2
-    uses: Srmrlt/Action-test/.github/workflows/test.yml@main
+    uses: $PATH/test.yml@main
